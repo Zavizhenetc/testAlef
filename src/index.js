@@ -9,7 +9,7 @@ import Validation from './js/components/Validation.js';
 import {SCROLL_UP_BTN, CATS_DATA, CATS_LIST, TEMPLATE, SHOW_MORE_BUTTON, FORM, SUBSCRIBE_BUTTON} from './js/constans/constans'
 
 // импортируем вспомогательные ф-ции
-import {scrollUp, pageUp} from './js/utils/utils.js';
+import {scrollUp, pageUp, sortArr} from './js/utils/utils.js';
 
 const  catCardsList = new CatCardList(CATS_LIST)
 const validationForm = new Validation(FORM, SUBSCRIBE_BUTTON);
@@ -30,30 +30,6 @@ selectAge.addEventListener('change', () => {
   catCardsList.remove();
   renderCats(arr);
 });
-
-
-
-
-function sortArr(elem) {
-  if (elem == 'priceUp'){
-     CATS_DATA.sort( function (a, b) {
-            return  b.price - a.price
-    });
-  } if (elem == 'priceDown'){
-    CATS_DATA.sort( function (a, b) {
-      return  a.price - b.price
-});
-  }if(elem == 'ageUp'){
-    CATS_DATA.sort( function (a, b) {
-      return  b.age - a.age
-});
-  }if(elem == 'ageDown'){
-    CATS_DATA.sort( function (a, b) {
-      return  a.age - b.age
-});
-  }
-  return CATS_DATA;
-}
 
 // рендерим котиков
 function renderCats(arr){
