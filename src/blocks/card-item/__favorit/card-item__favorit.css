@@ -1,0 +1,11 @@
+.card-item__favorit {
+  position: absolute;
+  display: block;
+  content: '';
+  top: 101%;
+  right: 30%;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  color: #6dbbd3;
+}

@@ -1,0 +1,8 @@
+@import url('./__select-price/filter__select-price.css');
+@import url('./__select-age/filter__select-age.css');
+@import url('./__sort/filter__sort.css');
+
+
+.filter{
+display: flex;
+}

@@ -1,0 +1,7 @@
+.footer__email-form{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1%;
+  max-width: 28%;
+  
+}

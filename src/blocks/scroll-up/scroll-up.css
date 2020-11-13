@@ -1,0 +1,19 @@
+.scroll-up {
+  position: fixed;
+  background-color: #6ebbd3;
+  background-image: url('../../images/arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 18%;
+  right: 4%;
+  width: 59px;
+  height: 59px;
+  cursor: pointer;
+  border: none;
+  display: none;
+  outline: none;
+}
+.scroll-up:hover {
+  box-shadow: 0 0 12px 1px #6dbbd3;
+  transition: all 0.3s ease-in-out;
+}

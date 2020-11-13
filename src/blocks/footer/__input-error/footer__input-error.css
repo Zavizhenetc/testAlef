@@ -1,0 +1,11 @@
+.footer__input-error {
+  display: none;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ff0000;
+  box-sizing: border-box;
+  height: 25px;
+  width: 100%;
+  margin-top: -7%;
+  padding-left: 1.5%;
+}

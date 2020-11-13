@@ -1,0 +1,16 @@
+.button_header {
+  outline: 0;
+  background-color: unset;
+  border: none;
+  color: white;
+  padding-right: 0;
+  opacity: 0.9;
+  z-index: 3;
+}
+
+.button_header:hover {
+  transition: all 0.4s ease-in-out;
+  text-shadow: 0 0 15px #ffff;
+  opacity: 1;
+  transform: scale(1.2);
+}

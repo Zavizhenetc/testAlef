@@ -1,0 +1,7 @@
+.card-item__about {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 7.5%;
+  padding-left: 6.5%;
+  border-left: 4px solid #6EBBD3;
+}

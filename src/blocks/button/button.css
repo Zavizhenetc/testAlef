@@ -1,0 +1,10 @@
+.button {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: all 1s ease-out;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}

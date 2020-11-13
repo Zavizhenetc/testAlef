@@ -1,0 +1,15 @@
+.button_footer {
+  border-radius: 10px;
+  width: 250px;
+  background-color: #6ebbd3;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffff;
+  height: 65px;
+}
+.button_footer-activ:hover {
+  box-shadow: 0 0 9px 1px #6dbbd3;
+  transition: all 0.45s ease-in-out;
+  transform: scale(1.02);
+}

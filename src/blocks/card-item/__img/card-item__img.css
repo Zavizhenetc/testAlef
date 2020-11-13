@@ -1,0 +1,11 @@
+.card-item__img {
+  background: url('https://i.ibb.co/qsMmJkx/Cat-1.png');
+  background-size: cover;
+  height: 230px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9%;
+  padding-left: 10%;
+  padding-right: 10%;
+  position: relative;
+}

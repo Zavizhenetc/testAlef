@@ -1,0 +1,31 @@
+@import url('./__wrapper/header__wrapper.css');
+@import url('./__result/header__result.css');
+@import url('./__wrapper/header__wrapper.css');
+@import url('./__logo/header__logo.css');
+@import url('./__logo-img/header__logo-img.css');
+@import url('./__contacts/header__contacts.css');
+@import url('./__contacts-tel/header__contacts-tel.css');
+@import url('./__nav/header__nav.css');
+
+.header {
+  background-color: #000;
+  position: relative;
+  font-family: Montserrat ;
+  font-style: normal;
+  color: #ffffff;
+  padding: 2.7%;
+  padding-left: 9%;
+  padding-right: 9%;
+}
+
+.header::after {
+  content: '';
+  background-image: url('../../images/cat_header.png');
+  background-size: cover;
+  opacity: 0.24;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

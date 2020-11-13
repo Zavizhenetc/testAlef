@@ -1,0 +1,12 @@
+.filter__select-age {
+  font-size: 18px;
+  line-height: 22px;
+  height: 1.5em;
+  appearance: none;
+  border: none;
+  outline: none;
+ 
+}
+.filter__select-age:hover {
+  cursor: pointer;
+}

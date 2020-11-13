@@ -1,0 +1,24 @@
+
+@import url('./vendor/normalize.css'); 
+@import url('./vendor/fonts.css'); 
+@import url('./blocks/root/root.css');
+@import url('./blocks/header/header.css');
+@import url('./blocks/nav/nav.css');
+@import url('./blocks/nav/_header/nav_header.css');
+@import url('./blocks/button/_header/button_header.css');
+@import url('./blocks/button/button.css');
+@import url('./blocks/button/_like/button_like.css');
+@import url('./blocks/button/_like-active/button_like-active.css');
+@import url('./blocks/button/_card/button_card.css');
+@import url('./blocks/button/_show-more/button_show-more.css');
+@import url('./blocks/button/_footer/button_footer.css');
+@import url('./blocks/button/_disabled/button_disabled.css');
+@import url('./blocks/button/_footer-disabled/button_footer-disabled.css');
+@import url('./blocks/main/main.css');
+@import url('./blocks/filter/filter.css');
+@import url('./blocks/container/container.css');
+@import url('./blocks/card-items/card-items.css');
+@import url('./blocks/card-item/card-item.css');
+@import url('./blocks/scroll-up/scroll-up.css');
+@import url('./blocks/footer/footer.css');
+

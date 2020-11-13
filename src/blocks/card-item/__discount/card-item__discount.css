@@ -1,0 +1,13 @@
+.card-item__discount {
+  background: #e62d2d;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  height: 29px;
+  width: 78px;
+  padding-top: 3%;
+  text-align: center;
+}

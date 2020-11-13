@@ -1,0 +1,26 @@
+@import url('./__img/card-item__img.css');
+@import url('./__discount/card-item__discount.css');
+@import url('./__description/card-item__description.css');
+@import url('./__title/card-item__title.css');
+@import url('./__about/card-item__about.css');
+@import url('./__about-color/card-item__about-color.css');
+@import url('./__about-color-text/card-item__about-color-text.css');
+@import url('./__about-age/card-item__about-age.css');
+@import url('./__about-age-text/card-item__about-age-text.css');
+@import url('./__about-count/card-item__about-count.css');
+@import url('./__about-count-text/card-item__about-count-text.css');
+@import url('./__price/card-item__price.css');
+@import url('./__favorit/_disabled/card-item__favorit_disabled.css');
+@import url('./__favorit/card-item__favorit.css');
+
+
+
+.card-item{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: all .45s ease-in-out;
+
+}
+.card-item:hover{
+  box-shadow: 0px -9px 19px 1px #6dbbd3;
+}

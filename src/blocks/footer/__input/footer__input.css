@@ -1,0 +1,9 @@
+.footer__input {
+  width: 300px;
+  height: 65px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 8%;
+  padding-left: 10%;
+}

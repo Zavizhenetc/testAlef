@@ -1,0 +1,9 @@
+.header__logo {
+  cursor: pointer;
+  z-index: 3;
+}
+.header__logo:hover {
+  text-shadow: 0 0 9px #fdf9f9;
+  
+
+}

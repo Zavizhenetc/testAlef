@@ -1,0 +1,7 @@
+
+.nav__items{
+list-style: none;
+display: flex;
+width: 25em;
+justify-content: space-between;
+}

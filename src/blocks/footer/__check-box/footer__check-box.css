@@ -1,0 +1,11 @@
+.footer__check-box {
+  width: 18px;
+  height: 18px;
+  margin-right: 6%;
+ background-color: #6EBBD3;
+
+}
+.footer__check-box:checked+label::before {
+ background-color: #6EBBD3;
+}
+

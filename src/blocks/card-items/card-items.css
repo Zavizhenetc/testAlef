@@ -1,0 +1,6 @@
+.card-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 380px);
+  grid-gap: 21px;
+  padding-top: 1.5%;
+}

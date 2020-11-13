@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alex Zavizhenetc" />
+    <title>Alef</title>
+    <link rel="icon" href="<%= require('./images/icon_cat.png').default%>" />
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>" />
+  </head>
+  <body class="root">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__nav">
+            <a href="#" class="header__logo"
+              ><img
+                src="<%= require('./images/Logo.png').default%>"
+                alt="Логотип"
+                class="header__logo-img"
+            /></a>
+            <nav class="nav nav_header">
+              <ul class="nav__items">
+                <li><a href="#" class="nav__item">Main</a></li>
+                <li><a href="#" class="nav__item">Gallery</a></li>
+                <li><a href="#" class="nav__item">News</a></li>
+                <li><a href="#" class="nav__item">Profile</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__contacts">
+            <p class="header__contacts-tel">+544 3490 00000</p>
+            <button type="submit" class="button button_header">
+              Звони скорее!
+            </button>
+          </div>
+        </div>
+
+        <p class="header__result">Найдено 349 котов</p>
+      </div>
+    </header>
+    <section class="main">
+      <div class="container">
+        <div class="filter">
+          <p class="filter__sort">Сортировать по:</p>
+          <select class="filter__select-price">
+            <option default="">Цене</option>
+            <option value="priceUp">Подешевле</option>
+            <option value="priceDown">Подороже</option>
+          </select>
+          <select size="1" class="filter__select-age">
+            <option default="">Возрасту</option>
+            <option value="ageUp">Постарше</option>
+            <option value="ageDown">Помоложе</option>
+          </select>
+        </div>
+      </div>
+      <div class="card-items container">
+        <template class="template" style="display: none">
+          <div class="card-item">
+            <div class="card-item__img">
+              <p class="card-item__discount">-40%</p>
+              <span id="favorite" class="card-item__favorit_disabled"
+                >Добавлено в избранное</span
+              >
+              <button id="btn-like" class="button button_like"></button>
+            </div>
+            <div class="card-item__description">
+              <h3 class="card-item__title">Кот полосатый</h3>
+              <div class="card-item__about">
+                <div class="card-item__about-color">
+                  <p class="card-item__about-color-text">Коричневый</p>
+                  <span>окрас</span>
+                </div>
+                <div class="card-item__about-age">
+                  <p class="card-item__about-age-text">2 мес.</p>
+                  <span>Возраст</span>
+                </div>
+                <div class="card-item__about-count">
+                  <p class="card-item__about-count-text">4</p>
+                  <span>Кол-во лап</span>
+                </div>
+              </div>
+              <p class="card-item__price">30 000 руб.</p>
+            </div>
+            <button id="button-card" class="button button_card">Купить</button>
+          </div>
+        </template>
+      </div>
+      <button class="button button_show-more">Показать еще 20</button>
+      <button class="scroll-up"></button>
+    </section>
+    <footer class="footer">
+      <div class="footer__text-container">
+        <h3 class="footer__title">Успей купить!</h3>
+        <p class="footer__text">Подпишись и успей словить все акции</p>
+      </div>
+      <form class="footer__email-form">
+        <input
+          class="footer__input"
+          type="email"
+          name="email"
+          pattern="^([a-zA-Z0-9]*([\-]|[_])?[a-zA-Z0-9])+@[a-zA-Z0-9\-]+[.][a-zA-Z.]{2,}$"
+          placeholder="E-Mail"
+          required=""
+        />
+        <span id="input-error" class="footer__input-error"></span>
+
+        <input
+          type="checkbox"
+          id="check-box"
+          class="footer__check-box"
+          pattern="^([\w]+([\-]|[_])?[a-zA-Z0-9])+@[a-zA-Z0-9\-]+[.][a-zA-Z.]{2,}$"
+        />
+        <label for="check-box">Подписаться на новости</label>
+      </form>
+      <button
+        id="button-footer"
+        class="button button_footer button_footer-disabled"
+      >
+        Подписаться
+      </button>
+    </footer>
+
+    <script type="module" src="<%= htmlWebpackPlugin.files.js %>"></script>
+  </body>
+</html>
