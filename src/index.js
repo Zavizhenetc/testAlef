@@ -13,6 +13,48 @@ import {scrollUp, pageUp} from './js/utils/utils.js';
 
 const  catCardsList = new CatCardList(CATS_LIST)
 const validationForm = new Validation(FORM, SUBSCRIBE_BUTTON);
+
+  renderCats(CATS_DATA);
+
+// ==============сортируем
+const selectPrice = document.querySelector('#selectPrice');
+const selectAge = document.querySelector('#selectAge');
+
+selectPrice.addEventListener('change', () => {
+  var arr = sortArr(selectPrice.value);
+  catCardsList.remove();
+  renderCats(arr);
+});
+selectAge.addEventListener('change', () => {
+  var arr = sortArr(selectAge.value);
+  catCardsList.remove();
+  renderCats(arr);
+});
+
+
+
+
+function sortArr(elem) {
+  if (elem == 'priceUp'){
+     CATS_DATA.sort( function (a, b) {
+            return  b.price - a.price
+    });
+  } if (elem == 'priceDown'){
+    CATS_DATA.sort( function (a, b) {
+      return  a.price - b.price
+});
+  }if(elem == 'ageUp'){
+    CATS_DATA.sort( function (a, b) {
+      return  b.age - a.age
+});
+  }if(elem == 'ageDown'){
+    CATS_DATA.sort( function (a, b) {
+      return  a.age - b.age
+});
+  }
+  return CATS_DATA;
+}
+
 // рендерим котиков
 function renderCats(arr){
     const cats = arr.map((data) => {
@@ -31,8 +73,8 @@ function renderCats(arr){
     }
 
   // добавляем еще котиков
-    function showMore(count) {
-      const cats = CATS_DATA.map((data) => {
+    function showMore(count, arr) {
+      const cats = arr.map((data) => {
         return new CatCard(data, TEMPLATE).createCard();
       });
       const catsCardsSlice = cats.slice(0, count);
@@ -48,10 +90,6 @@ SUBSCRIBE_BUTTON.addEventListener('click', () => {
   validationForm.setSubmitButtonState(false);
 });
 
-  renderCats(CATS_DATA);
-
-
-
 
 // слушаем скрол
 window.addEventListener('scroll', scrollUp);
@@ -59,8 +97,9 @@ window.addEventListener('scroll', scrollUp);
 SCROLL_UP_BTN.addEventListener('click', pageUp);
 
 // слушаем кнопку добавить еще котиков
-SHOW_MORE_BUTTON.addEventListener('click', () => {
-  showMore(count());
+SHOW_MORE_BUTTON.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  showMore(count(), CATS_DATA);
 })
 
 
