@@ -3,3 +3,8 @@
   justify-content: space-between;
  
 }
+@media screen and (max-width:933px){
+  .header__wrapper{
+    flex-direction: column;
+  }
+}

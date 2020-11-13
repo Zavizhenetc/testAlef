@@ -9,8 +9,8 @@
 .footer {
   display: flex;
   background-color: #1f2021;
-  max-width: 1080px;
-  min-height: 278px;
+  max-width: 75%;
+  min-height: 19.7em;
   margin: 0 auto;
   padding-left: 3.5%;
   padding-right: 3.5%;
@@ -22,4 +22,11 @@
   line-height: 17px;
   color: #ffff;
   align-items: baseline;
+}
+@media screen and (max-width:1050px){
+  .footer{
+    flex-wrap: wrap;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
 }

@@ -4,3 +4,8 @@
   line-height: 59px;
   margin-bottom: 0;
 }
+@media screen and (max-width:1050px){
+  .footer__title{
+margin: 0;
+  }
+}

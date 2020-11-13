@@ -5,3 +5,14 @@
   max-width: 28%;
   
 }
+@media screen and (max-width:1050px){
+  .footer__email-form{
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width:633px){
+  .footer__email-form{
+    max-width: 80%;
+  }
+}

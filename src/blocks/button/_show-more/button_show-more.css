@@ -1,5 +1,5 @@
 .button_show-more {
-  display: flex;
+  /* display: flex; */
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
@@ -7,7 +7,6 @@
   border-radius: 10px;
   margin: 6.1% auto;
   margin-bottom: 4%;
-  justify-content: center;
   padding: 1.8%;
   width: 380px;
   height: 65px;
@@ -16,4 +15,10 @@
   box-shadow: 0 0 12px 1px #6dbbd3;
   transition: all 0.45s ease-in-out;
   transform: scale(1.02);
+}
+
+@media screen and (max-width:855px){
+  .button_show-more{
+    width: calc(100vw - 71%);
+  }
 }

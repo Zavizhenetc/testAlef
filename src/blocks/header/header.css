@@ -9,6 +9,9 @@
 
 .header {
   background-color: #000;
+  /* background-image: url('../../images/cat_header.png'); */
+  background-size: cover;
+
   position: relative;
   font-family: Montserrat ;
   font-style: normal;
@@ -20,6 +23,7 @@
 
 .header::after {
   content: '';
+  /* background-color: #000; */
   background-image: url('../../images/cat_header.png');
   background-size: cover;
   opacity: 0.24;

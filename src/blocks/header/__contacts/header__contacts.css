@@ -1,5 +1,11 @@
-.header__contacts{
-  display:flex;
-flex-direction: column;
-align-items: flex-end;
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 3;
+}
+@media screen and (max-width:933px){
+  .header__contacts{
+    align-items: baseline;
+  }
 }

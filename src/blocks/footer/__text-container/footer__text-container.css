@@ -6,3 +6,8 @@
   margin-right: 3.5%;
   padding-left: 2.7%;
 }
+@media screen and (max-width:1050px){
+  .footer__text-container{
+    max-width: 100%;
+  }
+}

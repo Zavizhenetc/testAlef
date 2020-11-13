@@ -5,3 +5,10 @@
   margin-top: 0;
   margin-right: 2.6em;
 }
+
+@media screen and (max-width: 536px){
+  .filter__sort{
+    width: 100%;
+    margin: 0;
+  }
+}

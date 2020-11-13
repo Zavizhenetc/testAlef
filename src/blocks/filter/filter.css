@@ -6,3 +6,9 @@
 .filter{
 display: flex;
 }
+
+@media screen and (max-width:536px){
+  .filter{
+    flex-wrap: wrap;
+  }
+}
